@@ -17,8 +17,4 @@ export type NightDigest = {
   counts: { ok: number; retry: number; fail: number };
 };
 
-export function readNight(runsDir: string, night: string): NightDigest | null {
-  void runsDir;
-  void night;
-  return null;
-}
+export { readNight } from './read.js';
